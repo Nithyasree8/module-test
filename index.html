@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#searchInput {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="searchInput" placeholder="Search by name or symbol">
+        <button id="searchButton" class="button">Search</button>
+        <button id="sortMarketCapButton" class="button">Sort by Market Cap</button>
+        <button id="sortPercentageChangeButton" class="button">Sort by Percentage Change</button>
+    </div>
+    <table id="cryptoTable">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Symbol</th>
+                <th>Current Price (USD)</th>
+                <th>Total Volume</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+    </table>
+    <script src="script.js">
+    </script>
+</body>
+</html>
